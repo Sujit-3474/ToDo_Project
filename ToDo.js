@@ -5,10 +5,10 @@ const newScreen=document.createElement('div');
 newScreen.id='poptoadd';
 document.body.appendChild(newScreen);
 
-const popUpTab=document.getElementById('popTab'); //for add task
+const popUpTab=document.getElementById('popTab');//for add task
 
 const add=document.getElementById('addplus');
-add.addEventListener('click',addTask); //by click it will blur the page
+add.addEventListener('click',addTask);//by click it will blur the page
 
 // const addItem=document.getElementById('amAddIcon');
 
@@ -39,7 +39,7 @@ const updateTask=[];
 function newCard(){
     const userContent=document.getElementById('placename').value;//getting the text from user
     if(userContent==''){//while entering with out name in input it will popup
-        alert('Enter the Task ');
+        alert('Enter Your Task Name "BUDDY"');
         popUpTab.classList.add('active');
         newScreen.classList.add('active');
         parent.removeChild(task);
@@ -120,7 +120,7 @@ const addTaskToScreen = () => {
     function newWork(){
         const userText=document.getElementById('work').value;//getting the text from user
         if(userText==''){
-            alert('Enter The List Name');
+            alert('Enter Your List Name "BUDDY" ');
             popUpTab1.classList.add('active');
             newScreen.classList.add('active');
         }
@@ -145,9 +145,4 @@ const addTaskToScreen = () => {
         }
     }
  } 
-    // const newTab=document.createElement('div'); 
-    // newTab.setAttribute("id","newTab");
-    // console.log(newTab);
-    // document.body.append(newTab);
-    
 
